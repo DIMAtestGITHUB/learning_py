@@ -113,6 +113,6 @@ my_variable = 1
 if my_variable > 0:
     # type(variable) - function show what type variables do you have.
     print(f"{my_variable} begger than 0")
-    # ^
+    #    ^
     # f"{}" - its means what we can put into the bracket variabl
     #
