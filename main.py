@@ -99,12 +99,12 @@ print(my_dictionary)
 my_variable = 0
 if my_variable == 0:
     # so if we have if statment in python we need write "if my_variable == 0:"
-    # ^^ ^^^^^^^^^^^ ^^ ^^
+    # 							 ^^ ^^^^^^^^^^^ ^^ ^^
     # 1.) "if"- its key word say "I need compare if this equals this"
     # 2.)"my_varable" - its variable which we can compare
     # 3.)"==" - it compare
     # 4.) number or string which we comparing with variable
-    print("0")
+	print("0")
 # so we can put in the if statments compresion operators or relational operators
 # for example:
 # "<,>,!=, ==, <=, >="
