@@ -2,7 +2,7 @@ from tkinter import *
 
 n = Tk()
 
-an.mainloop()
+n.mainloop()
 
 
 
