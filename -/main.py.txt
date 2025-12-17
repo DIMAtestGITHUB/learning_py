@@ -1,0 +1,111 @@
+a = 10 # int variable: "int means - Integer". 
+       # We can put into this variable just number like"1,2,3..."
+
+b = "10" # it's string variable can contain symbol ("") or ('') which say Inteprеter, 
+    # "hay I have string" but this variable cannot be (10, asdasd, 123) without (""), ('').     
+
+c = 10.5 # this is the float variable. Float is the desemal nomber like 1.2 ...
+
+# Python it's language where we don't need write what type of variable you need,
+# but we can transformate integer into string or float
+
+# example
+
+# variable a = 10 it's integer. We can con:vert into str - String
+d = str(a)
+
+# type(variable) - function show what type variables do you have.
+
+# it is just note for which variable we cheking 
+print("variable: a")
+
+# it is just for understandeble what type of variable do we have 
+print(type(a))
+
+# it is just note for which variable we cheking 
+print("variable: d")
+
+# it is just for understandeble what type of variable do we have 
+print(type(d))
+
+#_________________________________________________________________________________________________
+#                               lists
+
+# This is the list of number 
+List = [1,2,3]
+
+# list it's like variable but that can conteinnig not just number.
+# We can put into the list: number - integer , string, float and another list
+
+List = [1,"1",1.2]
+
+# We can add or remove items
+
+# here We are add item.
+List.append("1")
+print(List)
+
+# here We are remove by name of item.
+List.remove("1")
+print(List)
+
+# here We are remove by index. 
+List.pop(0)
+
+# print(variable, string, int ...) - this is function for print something in consol  
+print(List)
+
+#_________________________________________________________________________________________________
+#                                   dictionary
+
+my_dictionary = {} # this is a dictionary. "{}" say for python what that means a dictionary, so if we have for example variable
+                   # "number_of_phone = {}". So that mean a dictionary.
+# dicrionary "my_dictionary" can contain key word and value for example:
+
+my_dictionary = {"Dima":"19 years old"}
+# print all dictionary
+print(my_dictionary)
+
+# now we print just value
+print(my_dictionary["Dima"]) # in [] we put what do you want to know about these key word
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

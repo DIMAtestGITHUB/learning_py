@@ -1,0 +1,70 @@
+#import webbrowser
+#url = input()
+#webbrowser.open(f"https://www.youtube.com/watch?v={url}")
+
+#import webview
+#inp = input()
+#html = f"""
+#<html>
+# <body>
+#    <iframe width="100%" height="100%"
+#      src="https://www.youtube.com/embed/{inp}?autoplay=1&mute=1"
+#      frameborder="0"
+#      allow="autoplay;encrypted-media">
+#    </iframe>
+#  </body>
+#</html>
+#"""
+#webview.create_window("Music", html=html)
+#webview.start()
+
+
+
+#import webbrowser
+#import webview
+
+#video_id = input("Video ID: ")
+
+#html = f"""
+#<html>
+#<body style="margin:0;">
+#<iframe width="100%" height="100%"
+#src="https://www.youtube.com/embed/{video_id}"
+#frameborder="0"></iframe>
+#</body>
+#</html>
+#"""
+
+#try:
+#    webview.create_window("Music", html=html)
+#    webview.start()
+#except:
+#    webbrowser.open(f"https://music.youtube.com/watch?v={video_id}")
+
+
+import yt_dlp
+import vlc
+import time
+
+url = input("YouTube URL: ")
+
+ydl_opts = {
+    'format': 'bestaudio',
+    'js_runtimes': {
+        'node': {}
+    },
+    'quiet': True
+    }
+
+with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+    info = ydl.extract_info(f"https://www.youtube.com/watch?v={url}", download=False)
+    stream_url = info['url']
+
+player = vlc.MediaPlayer(stream_url)
+player.play()
+
+#time.sleep(9999)
+while True:
+	if player.get_state() in (vlc.State.Ended, vlc.State.Error):
+		break
+	time.sleep(0.5)
